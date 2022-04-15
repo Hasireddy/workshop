@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Inconsolata:wght@300;400&family=Karma:wght@300&family=Nova+Mono&family=Open+Sans:wght@300&family=PT+Serif&family=Roboto+Mono:ital,wght@0,100;0,400;1,200&family=Source+Serif+Pro:ital,wght@1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Open+Sans:wght@300&family=Source+Serif+Pro:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/Arcblock_Logo-1536x1536.png" style="width:60px" alt="logo" />
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#duck">Talk to the Duck</a></li>
+                <li><a href="#emergency">Emergency Kit</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home">
+        <h1 style="color: #712B75;">Hello World</h1>
+        <p> ..and hello! This is my first ever coding project using HTMl and CSS .</p>
+    </header>
+    <section id="duck">
+        <h1 style="color: #712B75;text-align:center;">DUCKS</h1>
+        <div class="text">
+            <p>Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally smaller and shorter-necked than swans and geese, which are members of the same family. Divided among several subfamilies, they are a form
+                taxon.They do not represent a monophyletic group since swans and geese are not considered ducks. Ducks are mostly aquatic birds, and may be found in both fresh water and sea water.</p>
+            <a href="https://www.qualityimprint.com/collections/all/rubber-ducks"><img src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png" alt="Rubber Duck" style="width:40% "></a>
+        </div>
+        <!-- <div class="duck">
+                
+            </div> -->
+    </section>
+    <section id="emergency">
+        <h2 style="color: #712B75;">In case of emergency click on:</h2>
+        <button>Click</button>
+        <div class="grid-container">
+
+            <div class="grid-item" style="background-image: url('images/discord-logo.jpg'); background-repeat: no-repeat; background-size: Auto 150px;">
+                <a href="https://discordapp.com/channels/641221910146842644/641593560394760200"></a>
+                <h1>Discord</h1>
+            </div>
+
+            <a href="https://stackoverflow.com/">
+                <div class="grid-item">Stack Overflow</div>
+            </a>
+            <a href="https://developer.mozilla.org">
+                <div class="grid-item">MDN</div>
+            </a>
+            <a href="https://www.w3schools.com/">
+                <div class="grid-item">W3</div>
+            </a>
+            <a href="https://medium.com/">
+                <div class="grid-item">Medium</div>
+            </a>
+            <a href="https://www.codenewbie.org/podcast">
+                <div class="grid-item">Podcast</div>
+            </a>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2 style="color: #712B75;margin-top:10px; margin-bottom: 5px;">Contact Us</h2>
+        <textarea autofocus name="text" id="text" cols="10" rows="5" placeholder="Enter your Feedback here"></textarea>
+        <button id="submit">Submit</button><br/>
+        <div style="font-family: 'Open Sans',sans-serif;font-size:4rem; color:#810075">Proudly created by <em>Uma</em></div><br/>
+        <a href="https://github.com/Hasireddy/workshop.git"><img src="github" src="images/githubicon.png" alt="github-icon"></a>
+    </footer>
+    </footer>
+    <script>
+        let link = document.querySelector('button');
+        link.addEventListener('click', event => {
+            window.location.href = "https://www.codecademy.com/"
+        });
+        let name = document.getElementById('submit');
+        console.log(name);
+        name.addEventListener('click', event => {
+            event.preventDefault()
+            window.alert("You need to submit your feedback")
+        });
+    </script>
+</body>
+
+</html>
